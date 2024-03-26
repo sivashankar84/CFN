@@ -7,8 +7,8 @@ on:
       - 'main'
 
 env:
-  AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_ACCESS_KEY: AKIAR6Y7DRQYJU6VWROI
+  AWS_SECRET_ACCESS_KEY: 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
 
 jobs:
   build-infra:
