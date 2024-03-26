@@ -6,12 +6,7 @@ terraform {
     }
   }
 
-  backend "s3" {
-    bucket = "terraforms3-remote"
-    key = "dev/terraform.tfstate"
-    region = "us-east-1"
-  }
-}
+  
 
 provider "aws" {
   region = "us-east-1"
