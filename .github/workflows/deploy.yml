@@ -7,7 +7,6 @@ on:
       - 'main'
  
 
-
 jobs:
   build-infra:
     name: terraform-ci-cd
