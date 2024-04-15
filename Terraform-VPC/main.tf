@@ -1,6 +1,6 @@
 data "aws_vpcs" "existing_vpcs" {
   tags = {
-    Name = "Dev_vpc"
+    Name = "Dev-vpc"
   }
 }
 resource "aws_internet_gateway" "igw" {
