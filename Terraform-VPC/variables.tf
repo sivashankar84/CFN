@@ -8,7 +8,7 @@ variable "environment" {
   type = string
 }
 
-variable "public_subnet_cidr" {
+variable "public_subnets_cidr" {
   description = "Public Subnet  CIDR Range"
   type = list(string)
 }
