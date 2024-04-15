@@ -5,5 +5,5 @@ variable "vpc_cidr" {
 
 variable "environment" {
   description = "Environment"
-  type = list(string)
+  type = string
 }
