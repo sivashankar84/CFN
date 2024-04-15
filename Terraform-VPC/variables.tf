@@ -3,11 +3,6 @@ variable "vpc_cidr" {
   type = string
 }
 
-variable "subnet_cidr" {
-  description = "Subnet CIDRS"
-  type = list(string)
-}
-
 variable "environment" {
   description = "Environment"
   type = list(string)
