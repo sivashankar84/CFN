@@ -1,6 +1,12 @@
-module "vpc" {
-  source = "./modules/vpc"
-  vpc_cidr = var.vpc_cidr
-  subnet_cidr = var.subnet_cidr
+data "aws_vpcs" "existing_vpcs" {
+  tags = {
+    Name = "Dev_vpc"
+  }
 }
-
+resource "aws_internet_gateway" "igw" {
+  vpc_id = data.aws_vpcs.existing_vpcs.ids[0]
+  tags = {
+    Name        = "${var.environment}-igw"
+    Environment = "${var.environment}"
+  }
+}
